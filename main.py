@@ -7,7 +7,7 @@ nltk.download('stopwords')
 tokenizer = RegexpTokenizer(r'\w+')
 tally = {}
 
-for filepath in glob.glob("./venv/politics/*.txt"):
+for filepath in glob.glob("./politics/*.txt"):
     with open(filepath, 'r') as file:
         doc = file.read()
     stop_words = set(stopwords.words('english'))
